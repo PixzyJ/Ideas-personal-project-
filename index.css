@@ -4,26 +4,25 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.pacifico-regular {
-  font-family: "Pacifico", serif;
+.playwrite-de-sas-guides-regular {
+  font-family: "Playwrite DE SAS Guides", serif;
   font-weight: 400;
   font-style: normal;
 }
+
 
 /* header and footer section*/
 header {
   position: fixed;
   top: 0;
-  left: 0;
   background-color: transparent;
-  width: 200vw;
+  width: 100%;
   display: flex;
   color: black;
-  padding: 5px 20px 2px;
+  padding: 10px 20px;
   /* max-width: 1150px; */
   border-bottom: 1px solid rgb(85, 85, 85);
   align-items: center;
-  height: 10vh;
 }
 
 nav{
@@ -41,21 +40,21 @@ nav{
  width: 80px;
 }
 .radian{
-  font-family: "Pacifico", serif;
+  font-family: "Playwrite", serif;
   font-size: 32px;
   letter-spacing: 0.5px;
 }
 
 footer{
-  width: 200vw;
+  width: 100%;
   display: flex;
   color: black;
   background-color: transparent;
   bottom: 0;
-  left: 0;
-  height: 8vh;
   border-top: 1px solid rgb(85, 85, 85);
   align-items: center;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .copyr{
