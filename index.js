@@ -3,6 +3,7 @@ let container = document.querySelector(".container");
 let colorCard = document.querySelector(".colorCard");
 let btn = document.querySelector("button");
 let hex = document.querySelector("span");
+let footer = document.querySelector("footer");
 let color;
 
 // using the function-math.random and math.floor
@@ -17,6 +18,8 @@ function getNewColor() {
   hex.style.background = color;
   colorCard.style.background = color;
   document.body.style.background = color;
+  console.log(footer);
+  footer.style.background = color;
 }
 
 btn.addEventListener("click", getNewColor);
@@ -29,4 +32,4 @@ document.addEventListener("scroll", function () {
   } else {
     header[0].classList.remove("scrolled");
   }
-})
+});
