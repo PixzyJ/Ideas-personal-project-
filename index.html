@@ -4,87 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Background Changer</title>
-    <style type="text/css">
-      body {
-        background-color: #f77754;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-      }
-      .container {
-        width: 280px;
-        height: 140px;
-        padding: 20px;
-        position: relative;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        margin: 10px;
-      }
-      .colorCard {
-        background-color: #f77754;
-        position: absolute;
-        width: 120px;
-        height: 120px;
-        top: 50px;
-        left: -50px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        border-radius: 30px 0 30px 30px;
-      }
-      .content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 50px;
-        margin-left: 50px;
-      }
-      #hex {
-        display: block;
-        color: white;
-        font-size: 24px;
-        margin: 10px;
-        text-transform: uppercase;
-      }
-      button {
-        background-color: transparent;
-        border-radius: 1px solid white;
-        padding: 8px 22px;
-        font-size: 22px;
-        cursor: pointer;
-        color: white;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+DE+SAS+Guides&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="media-query.css">
+    
   </head>
   <body>
-    <div class="container">
-      <div class="colorCard"></div>
-      <div class="content">
-        <span id="hex">#F77754</span>
-        <button>Get new !~</button>
+<header>
+  <nav>
+    <div class="logo">
+      <h2 class="radian">RadiantButton</h2>
+    </div>
+  </nav>
+</header>
+
+  <main>
+    <div class="firstContainer">
+      <h2>Radiant multicolored button</h2>
+      <p>Experience the beauty of brilliant colors at a button click</p>
+      <div class="container">
+        <div class="colorCard"></div>
+        <div class="content">
+          <span id="hex">#F77754</span>
+          <button>Get new colors</button>
+        </div>
       </div>
     </div>
-    <script>
-      let container = document.querySelector(".container");
-      let colorCard = document.querySelector(".colorCard");
-      let btn = document.querySelector("button");
-      let hex = document.querySelector("span");
-      let color;
 
-      function getNewColor() {
-        let symbols = "0123456789ABCDEF";
-        let color = "#";
-        for (let i = 0; i < 6; i++) {
-          color = color + symbols[Math.floor(Math.random() * 16)];
-        }
-        console.log(color);
-        hex.textContent = `${color}`;
-        hex.style.background = color;
-        colorCard.style.background = color;
-        document.body.style.background = color;
-      }
-
-      btn.addEventListener("click", getNewColor);
-    </script>
+    <div class="secondContainer">
+      <img class="girlimg" src="pic\Rectangle 58.jpg" alt="image" width="200" height="250">
+    </div>
+    
+    
+  </main>
+   <footer>
+    <p class="copyr">&copy; Copy rights reserved.</p>
+   </footer>
+  <script src="index.js"></script>
   </body>
 </html>
